@@ -288,7 +288,7 @@
 	dir = 8;
 	pixel_x = -5;
 	name = "roomba";
-	desc = "There's a little post-it on it. /"Roomy/". D'awwh."
+	desc = "There's a little post-it on it. "Roomy". D'awwh."
 	},
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/carpet/black,
@@ -537,6 +537,10 @@
 /area/misc/condo)
 "hT" = (
 /obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/bed/dogbed{
+	pixel_y = 8;
+	desc = "Looks nice, but your not a dog ... I think."
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/misc/condo)
 "hV" = (
@@ -657,14 +661,6 @@
 /obj/structure/table/wood/fancy/blue,
 /turf/open/floor/wood/tile,
 /area/misc/condo)
-"jE" = (
-/obj/structure/chair/greyscale{
-	dir = 4
-	},
-/turf/open/indestructible/tram{
-	color = "#c6c6c6"
-	},
-/area/misc/condo)
 "jR" = (
 /obj/machinery/door/poddoor,
 /turf/open/space/basic,
@@ -686,12 +682,6 @@
 	dir = 1
 	},
 /turf/open/floor/circuit/red/off,
-/area/misc/condo)
-"kr" = (
-/obj/structure/table,
-/turf/open/indestructible/tram{
-	color = "#c6c6c6"
-	},
 /area/misc/condo)
 "kw" = (
 /obj/effect/turf_decal/siding/wood{
@@ -813,7 +803,7 @@
 /area/misc/condo)
 "mZ" = (
 /obj/structure/sign/warning{
-	desc = "/"WARNING: BIOLOGICAL RESEARCH SITE -- DO NOT TRESSPASS/""
+	desc = "/"WARNING:BIOLOGICALRESEARCHSITE--DONOTTRESSPASS/""
 	},
 /turf/closed/indestructible/reinforced,
 /area/misc/condo)
@@ -853,6 +843,9 @@
 /obj/machinery/microwave{
 	pixel_x = -2;
 	pixel_y = 6
+	},
+/obj/machinery/light/directional/north{
+	dir = 2
 	},
 /turf/open/floor/iron/kitchen,
 /area/misc/condo)
@@ -1178,7 +1171,7 @@
 /obj/machinery/jukebox{
 	req_access = null;
 	pixel_y = 21;
-	desc = "A music player --s"
+	desc = "A music player. The only one you can really get in Castor."
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -1339,15 +1332,27 @@
 /turf/open/space/basic,
 /area/misc/condo)
 "tP" = (
-/obj/structure/lattice/catwalk/mining,
-/obj/structure/fluff/metalpole,
-/obj/structure/railing{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
-/obj/structure/railing{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/turf/open/space/basic,
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wideplating_new/dark/corner,
+/obj/machinery/door/morgue{
+	name = "Bitrunning";
+	desc = "There's a post-it note here on the door, reading "BITRUNNING". That isn't a good sign."
+	},
+/turf/open/floor/iron/dark/smooth_large,
 /area/misc/condo)
 "tU" = (
 /obj/structure/decorative{
@@ -1420,6 +1425,8 @@
 /obj/structure/table/optable,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/line,
+/obj/item/tank/internals/anesthetic,
+/obj/item/clothing/mask/breath/anesthetic,
 /turf/open/floor/circuit/red/off,
 /area/misc/condo)
 "uM" = (
@@ -1525,7 +1532,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/machinery/door/morgue{
 	name = "Lab";
-	desc = "There's a crude post-it note on the door reading "RUBY'S LAB -- KNOCK FIRST"."
+	desc = "There's a crude post-it note on the door reading "RUBY'SLAB--KNOCKFIRST"."
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/misc/condo)
@@ -1969,7 +1976,7 @@
 	},
 /obj/machinery/door/morgue{
 	name = "Lab";
-	desc = "There's a crude post-it note on the door reading /s"RUBY'S LAB -- KNOCK FIRST/"."
+	desc = "There's a crude post-it note on the door reading /s"RUBY'SLAB--KNOCKFIRST"."
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/misc/condo)
@@ -2030,6 +2037,7 @@
 /obj/structure/marker_beacon/indigo{
 	pixel_x = 16
 	},
+/obj/item/paper_bin,
 /turf/open/floor/carpet/stellar,
 /area/misc/condo)
 "DW" = (
@@ -2274,7 +2282,7 @@
 	desc = "What a load of rubbish."
 	},
 /obj/structure/sign/poster/official/moth_meth/directional/north{
-	desc = "This official Nanotrasen-issued poster uses Safety Moth to talk about corporate sanctioned genemodifcation. /"Remember -- APEX strains can lead to SolFed liablity!/" A large chunk of fine print is on the bottom of the poster."
+	desc = "This official Nanostrasen-issued poster uses Safety Moth to talk about corporate sanctioned genemodifcation. "Remember--APEX strains can lead to SolFed liablity!" A large chunk of fine print is on the bottom of the poster."
 	},
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/misc/condo)
@@ -2397,7 +2405,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/machinery/vending/wallmed/directional/east,
+/obj/machinery/vending/wallmed/directional/east{
+	desc = "Encase you suck at cutting things, maybe."
+	},
 /turf/open/floor/iron/kitchen,
 /area/misc/condo)
 "Kk" = (
@@ -2923,8 +2933,15 @@
 /turf/closed/indestructible/reinforced,
 /area/misc/condo)
 "QS" = (
-/obj/structure/chair/greyscale{
-	dir = 8
+/obj/structure/fluff/metalpole{
+	dir = 1
+	},
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	icon = 'icons/turf/decals.dmi';
+	dir = 4;
+	color = "#878787";
+	pixel_x = -32
 	},
 /turf/open/indestructible/tram{
 	color = "#c6c6c6"
@@ -2955,7 +2972,6 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/structure/fluff/metalpole,
 /turf/closed/indestructible/reinforced,
 /area/misc/condo)
 "RH" = (
@@ -3319,6 +3335,7 @@
 /obj/machinery/light/directional/north{
 	dir = 4
 	},
+/obj/structure/fluff/metalpole,
 /turf/open/indestructible/tram{
 	color = "#c6c6c6"
 	},
@@ -3438,17 +3455,13 @@
 /turf/open/floor/circuit/red/off,
 /area/misc/condo)
 "WM" = (
-/obj/effect/light_emitter/interlink{
-	light_color = "#ffe7cf";
-	light_power = 1.5
-	},
-/obj/structure/lattice/catwalk/mining,
-/obj/structure/railing{
+/obj/structure/fluff/metalpole{
 	dir = 4
 	},
-/obj/structure/railing{
+/obj/structure/fluff/metalpole{
 	dir = 8
 	},
+/obj/structure/fluff/metalpole,
 /turf/open/space/basic,
 /area/misc/condo)
 "WS" = (
@@ -3778,7 +3791,7 @@ qA
 LA
 WH
 Fs
-XM
+ox
 XM
 XM
 XM
@@ -3805,7 +3818,7 @@ Cu
 Cu
 qA
 SK
-QU
+WM
 QU
 QU
 QU
@@ -3832,7 +3845,7 @@ qA
 qA
 qA
 Fs
-XM
+ox
 XM
 XM
 XM
@@ -3858,8 +3871,8 @@ ey
 XM
 ni
 XM
-Fs
-XM
+Zm
+ox
 XM
 XM
 XM
@@ -3885,13 +3898,13 @@ Hz
 il
 il
 il
-WM
+il
 il
 rK
 il
 il
 il
-tP
+il
 Tc
 il
 fn
@@ -3912,8 +3925,8 @@ Zx
 XM
 XM
 XM
-XM
-XM
+Zm
+ox
 XM
 XM
 XM
@@ -3939,8 +3952,8 @@ Zx
 XM
 XM
 XM
-XM
-XM
+Zm
+ox
 XM
 XM
 XM
@@ -3966,7 +3979,7 @@ Ov
 XM
 iz
 XB
-XB
+QS
 VQ
 XB
 db
@@ -3991,7 +4004,7 @@ qA
 qA
 hq
 vw
-jE
+mR
 mR
 LI
 Oi
@@ -4018,7 +4031,7 @@ qA
 qo
 fn
 vw
-kr
+mR
 rt
 Xq
 CV
@@ -4045,7 +4058,7 @@ qA
 qo
 Ov
 Fb
-QS
+mR
 Mw
 Xq
 hi
@@ -4076,7 +4089,7 @@ mR
 uf
 Vd
 hV
-IQ
+tP
 WK
 ON
 pT
